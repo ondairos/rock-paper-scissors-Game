@@ -40,7 +40,14 @@ print ("You: " + to_string(user_hand) + " -- Computer: " + to_string(computer_ha
 
 #Compare the two hands and print result
 
-
+if user_hand == computer_hand:
+    print("Tie")
+elif (user_hand == "r" and computer_hand == "s" or
+    user_hand == "p" and computer_hand == "r" or
+    user_hand == "s" and computer_hand == "p"):
+    print("You win")
+else:
+    print("You lose")
 
 
     
