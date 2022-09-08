@@ -27,6 +27,20 @@ else:
 
 #Randomly pick one of the strings ,r, p and s
 computer_hand: str
+r: int = random.randint(0,2)
+if r == 0:
+    computer_hand = "r"
+elif r == 1:
+    computer_hand = "p"
+else:
+    computer_hand = "s"
+
+print ("You: " + to_string(user_hand) + " -- Computer: " + to_string(computer_hand))
+
+
+#Compare the two hands and print result
+
+
 
 
     
